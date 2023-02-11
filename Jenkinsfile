@@ -27,19 +27,8 @@ pipeline {
                   protocol: 'http', 
                   repository: 'biomedical_app_repo', 
                   version: '${POM_VERSION}'
+                }
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploy Step'
-                sleep 10
-            }
-        }
-        stage('Docker') {
-            steps {
-                echo 'Image step'
-            }
-        }
-    }
-}
+
 
